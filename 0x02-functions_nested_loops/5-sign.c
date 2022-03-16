@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_sign - function that prints the sign of a number..
@@ -24,4 +24,3 @@ int print_sign(int n)
 		return (0);
 	}
 }
-
