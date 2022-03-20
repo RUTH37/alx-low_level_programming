@@ -3,36 +3,27 @@
 /**
  * main - program that prints the numbers from 1 to 100
  * But for multiples of three print Fizz
- * and for the mutiples of five print Buzz
- * Return: 0
+ * and for the multiples of five print Buzz
+ * Return: 0.
  */
 
 int main(void)
 {
+	int num;
 
-	int i = 1;
-
-	while (i <= 100)
+	for (num = 1; num <= 100; num++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
+		if (num % 3 == 0 && num % 5 == 0)
+			printf("FizzBuzz ");
+		else if (num % 3 == 0 && num % 5 != 0)
+			printf("Fizz ");
+		else if (num == 100)
 			printf("Buzz");
-		}
-		else if (i == 100)
-		{
-			printf("Buzz");
-		}
+		else if (num % 5 == 0 && num % 3 != 0)
+			printf("Buzz ");
 		else
-			printf("%i", i);
+			printf("%d ", num);
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
