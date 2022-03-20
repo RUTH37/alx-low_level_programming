@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - program that prints the numbers from 1 to 100
  * But for multiples of three print Fizz
@@ -32,6 +33,6 @@ int main(void)
 		else
 			printf("%i", i);
 	}
-	printf("\n");
+	putchar("\n");
 	return (0);
 }
