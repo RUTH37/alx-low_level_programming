@@ -23,3 +23,4 @@ divisor += 1;
 }
 printf("%ld\n", larg_prim);
 return (0);
+}
