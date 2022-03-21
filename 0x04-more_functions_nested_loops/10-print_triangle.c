@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_triangle - function that prints a square, followed by a new line
@@ -16,15 +16,14 @@ void print_triangle(int size)
 		{
 			for (col = 0; col < size; col++)
 			{
-				aux = (size - row) -1;
+				aux = (size - row) - 1;
 				if (col < aux)
 					_putchar(' ');
 				else
-					_putchar(#);
+					_putchar(35);
 			}
 			_putchar('\n');
 		}
 	}
 	else
 		_putchar('\n');
-}
