@@ -3,20 +3,20 @@
 /**
  * _rev - function that prints  string in reverse.
  *
- * @s: print rev string
+ * @s: print rev string.
  * Return: void
  */
 
 void print_rev(char *s)
 {
 	int i = 0;
-	int lenght;
+	int length;
 
-	for (lenght = 0; s[lenght] != '\0'; lenght++)
+	for (length = 0; s[length] != '\0'; length++)
 	{
 	}
 
-	for (i = lenght -1; i >= 0; i--)
+	for (i = length -1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
