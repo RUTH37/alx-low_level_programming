@@ -1,22 +1,19 @@
 #include <stdio.h>
 /**
- *
- * main - entry point
+ *main - entry point
  *
  * Return: alway returns 0
  *
  */
 int main(void)
 {
-char a;
+int i;
 
-for (a = 'a'; a <= 'z' ; a++)
+for (i = 10; i < 20; i++)
 {
-if (a == 'q' || a == 'e')
-{
-continue;
+putchar(',');
+putchar(' ');
 }
-putchar(a);
 }
 putchar('\n');
 return (0);
